@@ -32,7 +32,7 @@ Execute the grovvy script
     groovy lock-example.groovy
     ```
 
-##Flow of the locking service
+## A locking scenario
 
 1. Three clients (Client A, B and C) are trying to lock the same Resource. Because the use the _Sequential_ flag ZooKeeper
     is appending a counter to the created nodes. The client with the lowest node (Client A) can acquire the lock, all the others
